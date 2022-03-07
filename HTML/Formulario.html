@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1 LaunchX</title>
+</head>
+<body style="margin: 30px;;padding:0">
+    <!-- Headings -->
+    <img src="OlalaLogo.png" alt="Logo de Pastelería Olalá" 
+    width="250px" height="250px">
+
+    <h1 style="font-family:Didot;">Pastelería Olalá</h1>
+
+    <h2 style="font-family:Didot;text-align:left">Formulario para Pedido</h1>
+
+    <form action="pedido.js" id="form1" method="post">
+
+        <label for="Nombrec"> Nombre del Cliente</label>
+        <br>
+        <input type="text" id="Nombrec" name="Nombrec">
+        <br><br>
+    
+        <label for="Correoc"> Correo Electrónico</label>
+        <br>
+        <input type="email" id="Correoc" name="Correoc">
+        <br><br>
+    
+        <label for="Telc"> Teléfono</label>
+        <br>
+        <input type="tel" id="Telc" name="Telc" maxlength="10">
+        <br><br>
+    
+        <label for="Dirc"> Dirección</label>
+        <br>
+        <input type="text" id="Dirc" name="Dirc">
+        <br><br>
+    
+    
+        <h2 style="font-family:Didot;text-align:left">Elige tu pastel</h1>
+        <input type="checkbox" id="p1" name="p1" value="Sabrosé">
+        <label for="p1">Sabrosé</label><br>
+        <input type="checkbox" id="p2" name="p2" value="Eiffel">
+        <label for="p2">Eiffel</label><br>
+        <input type="checkbox" id="p3" name="p3" value="Trois Lechés">
+        <label for="p3">Trois Lechés</label><br>
+        <input type="checkbox" id="p4" name="p4" value="Moulin Rouge">
+        <label for="p4">Moulin Rouge</label><br>
+        <input type="checkbox" id="p5" name="p5" value="Choco Amour">
+        <label for="p5">Choco Amour</label><br>
+        <input type="checkbox" id="p6" name="p6" value="La Vache">
+        <label for="p6">La Vache</label><br>
+        <input type="checkbox" id="p7" name="p7" value="París Mi Amor">
+        <label for="p7">París Mi Amor</label><br><br>
+    
+    
+        <h2 style="font-family:Didot;text-align:left">Selección de Toppings Extra</h1>
+        <input type="checkbox" id="t0" name="t0" value="Ninguno">
+        <label for="t0">Ninguno</label><br>
+        <input type="checkbox" id="topping8" name="topping8" value="Almendras">
+        <label for="topping8">Almendras</label><br>
+        <input type="checkbox" id="topping1" name="topping1" value="Granillo de Chocolate">
+        <label for="topping1">Granillo de Chocolate</label><br>
+        <input type="checkbox" id="topping2" name="topping2" value="M&M's">
+        <label for="topping2">M&M's</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Granola de Chocolate">
+        <label for="topping3">Granola de Chocolate</label><br>
+        <input type="checkbox" id="topping4" name="topping4" value="Mermelada">
+        <label for="topping4">Mermelada</label><br>
+        <label for="Mermelada"> ¿Qué Mermelada Quieres?</label>
+        <input type="text" id="Mermelada" name="Mermelada">
+        <br>
+        <input type="checkbox" id="topping5" name="topping5" value="Crema Chantilly">
+        <label for="topping5">Crema Chantilly</label><br>
+        <input type="checkbox" id="topping6" name="topping6" value="Mousse">
+        <label for="topping6">Mousse</label><br>
+        <label for="Mss"> ¿Qué Mousse Quieres?</label>
+        <input type="text" id="Mss" name="Mss">
+        <br>
+        <input type="checkbox" id="topping7" name="topping7" value="Fruta">
+        <label for="topping7">Fruta</label><br>
+        <label for="Ft"> ¿Qué Fruta Quieres?</label>
+        <input type="text" id="Ft" name="Ft">
+        <br><br>
+    
+    
+        <h2 style="font-family:Didot;text-align:left">Elige tu Decoración</h1>
+        <input type="checkbox" id="d1" name="d1" value="Crema Chantilly">
+        <label for="d1">Crema Chantilly</label><br>
+        <input type="checkbox" id="d2" name="d2" value="Fondant 3D">
+        <label for="d2">Fondant 3D</label><br>
+        <input type="checkbox" id="d3" name="d3" value="Escultura de Fondant">
+        <label for="d3">Escultura de Fondant</label><br>
+        <input type="checkbox" id="d4" name="d4" value="Chocolate Líquido">
+        <label for="d4">Chocolate Líquido</label><br>
+        <input type="checkbox" id="d5" name="d5" value="Escultura de Chocolate">
+        <label for="d5">Escultura de Chocolate</label><br><br>
+    
+        <input type="reset">
+        <input type="submit">
+
+    </form>
