@@ -5,6 +5,85 @@
     div.list {
         text-align: left;
     }
+
+    * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(90, 78, 78);
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 100%;
+            height: 200px;
+            /* only for demonstration, should be removed */
+            background: rgb(206, 194, 194);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 100%;
+            background-color: #f1f1f1;
+            height: 500px;
+        }
+
+        .column {
+           float: left;
+           width: 50%;
+           height: 500px;
+        }
+
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
 </style>
 
 <head>
@@ -15,6 +94,9 @@
 </head>
 <body>
     <!-- Headings -->
+
+    <header>
+        
     <img src="OlalaLogo.png" alt="Logo de Pastelería Olalá" 
     width="250px" height="250px">
 
@@ -22,68 +104,87 @@
 
     <h2 style="font-family:Didot;text-align:center">Menú</h1>
 
-    <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
-        <tr>
-            <th scope="col">LE NOMBRE</th>
-            <th scope="col">LE BASE</th>
-            <th scope="col">LE TOPPING</th>
-        </tr>
-        <tr>
-            <th scope="row">Sabrosé</th>
-            <td>Pan de vainilla con almendras</td>
-            <td>Mermelada de Maracuyá y crema chantilly</td>
-        </tr>
-        <tr>
-            <th scope="row">Eiffel</th>
-            <td>Pan marmoleado</td>
-            <td>Mousse de mocha con chantilly</td>
-        </tr>
-        <tr>
-            <th scope="row">Trois Lechés</th>
-            <td>Pan a las Tres Leches</td>
-            <td>A elegir</td>
-        </tr>
-        <tr>
-            <th scope="row">Moulin Rouge</th>
-            <td>Pan Red Velvet</td>
-            <td>Mermelada de cereza con trozos de chocolate oscuro</td>
-        </tr>
-        <tr>
-            <th scope="row">Choco Amour</th>
-            <td>Pan de chocolate oscuro</td>
-            <td>Mousse de chocolate</td>
-        </tr>
-        <tr>
-            <th scope="row">La Vache</th>
-            <td>Pan de vainilla y chips de chocolate</td>
-            <td>Mousse de chocolate blanco</td>
-        </tr>
-        <tr>
-            <th scope="row">París Mi Amor</th>
-            <td>Chocoflan</td>
-            <td>A elegir</td>
-        </tr>
-    </table>
+    </header>
 
-    <h2 style="font-family:Didot;text-align:left">Toppings</h1>
-    <div class="list">
-        <li>Granillo de chocolate</li>
-        <li>M&M's</li>
-        <li>Granola de chocolate</li>
-        <li>Mermelada (Cereza, Zarzamora, Mango, Maracuyá, Fresa, Manzana, Naranja)</li>
-        <li>Crema Chantilly</li>
-        <li>Mousse (Mocha, Chocolate Oscuro, Chocolate Blanco, Matcha, Mango)</li>
-        <li>Fruta (Mangos, Duraznos, Fresas, Zarzamoras)</li>
-        <li>Almendras</li>
-    </div>
+    <section>
+        <nav> 
+         <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+             <tr>
+                    <th scope="col">LE NOMBRE</th>
+                    <th scope="col">LE BASE</th>
+                 <th scope="col">LE TOPPING</th>
+                </tr>
+                <tr>
+                    <th scope="row">Sabrosé</th>
+                    <td>Pan de vainilla con almendras</td>
+                    <td>Mermelada de Maracuyá y crema chantilly</td>
+             </tr>
+                <tr>
+                    <th scope="row">Eiffel</th>
+                    <td>Pan marmoleado</td>
+                    <td>Mousse de mocha con chantilly</td>
+                </tr>
+                <tr>
+                 <th scope="row">Trois Lechés</th>
+                 <td>Pan a las Tres Leches</td>
+                 <td>A elegir</td>
+             </tr>
+             <tr>
+                    <th scope="row">Moulin Rouge</th>
+                 <td>Pan Red Velvet</td>
+                    <td>Mermelada de cereza con trozos de chocolate oscuro</td>
+                </tr>
+                <tr>
+                 <th scope="row">Choco Amour</th>
+                 <td>Pan de chocolate oscuro</td>
+                    <td>Mousse de chocolate</td>
+                </tr>
+             <tr>
+                    <th scope="row">La Vache</th>
+                    <td>Pan de vainilla y chips de chocolate</td>
+                    <td>Mousse de chocolate blanco</td>
+             </tr>
+             <tr>
+                 <th scope="row">París Mi Amor</th>
+                    <td>Chocoflan</td>
+                    <td>A elegir</td>
+             </tr>
+         </table>
+        </nav>
 
-    <h2 style="font-family:Didot;text-align:left">Decoración</h1>
-    <div class="list">
-        <li>Crema Chantilly</li>
-        <li>Fondant 3D</li>
-        <li>Escultura de Fondant</li>
-        <li>Chocolate Líquido</li>
-        <li>Escultura de Chocolate</li>
+    </section> 
+
+    <div class="row">
+        <div class="column" style="background-color:#fae3d8;">
+            <h2 style="font-family:Didot;text-align:left">Toppings</h1>
+                <div class="list">
+                    <ul>
+                            <li>Granillo de chocolate</li>
+                            <li>M&M's</li>
+                            <li>Granola de chocolate</li>
+                            <li>Mermelada (Cereza, Zarzamora, Mango, Maracuyá, Fresa, Manzana, Naranja)</li>
+                            <li>Crema Chantilly</li>
+                            <li>Mousse (Mocha, Chocolate Oscuro, Chocolate Blanco, Matcha, Mango)</li>
+                            <li>Fruta (Mangos, Duraznos, Fresas, Zarzamoras)</li>
+                            <li>Almendras</li>
+                    </ul>
+                </div>
+    
+                <h2 style="font-family:Didot;text-align:left">Decoración</h1>
+                <div class="list">
+                    <ul>
+                        <li>Crema Chantilly</li>
+                         <li>Fondant 3D</li>
+                        <li>Escultura de Fondant</li>
+                        <li>Chocolate Líquido</li>
+                        <li>Escultura de Chocolate</li>
+                    </ul>
+                </div>
+        </div>
+        <div class="column" style="background-color:#ffffff;">
+            <img src="dessert cup.png" alt="precios" 
+            width="1008px" height="500px">
+        </div>
     </div>
 
     <br>
